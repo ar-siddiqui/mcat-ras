@@ -1,4 +1,7 @@
-name: 🧪 API tests
+name: E2E tests
+
+  icon: 'check-circle'  
+  color: 'yellow'
 
 on:
   push:
