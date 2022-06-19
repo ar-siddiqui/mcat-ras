@@ -1,6 +1,7 @@
 name: E2E tests
 
-  icon: 'check-circle'  
+branding:
+  icon: 'check-circle'
   color: 'yellow'
 
 on:
