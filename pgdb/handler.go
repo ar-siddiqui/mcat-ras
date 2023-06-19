@@ -1,10 +1,11 @@
 package pgdb
 
 import (
-	"app/config"
-	"app/handlers"
 	"fmt"
 	"net/http"
+
+	"github.com/ar-siddiqui/mcat-ras/config"
+	"github.com/ar-siddiqui/mcat-ras/handlers"
 
 	"github.com/go-errors/errors" // warning: replaces standard errors
 	"github.com/jmoiron/sqlx"
@@ -41,7 +42,7 @@ func UpsertRasGeometry(ac *config.APIConfig, db *sqlx.DB) echo.HandlerFunc {
 		if definitionFile == "" {
 			return c.JSON(http.StatusBadRequest,
 				handlers.SimpleResponse{Status: http.StatusBadRequest,
-					Message: "Missing query parameter: `definition_file`", })
+					Message: "Missing query parameter: `definition_file`"})
 		}
 
 		err := upsertModelGeometry(definitionFile, ac, db)

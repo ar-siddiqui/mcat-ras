@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"app/config"
-	"app/tools"
+	"github.com/ar-siddiqui/mcat-ras/config"
+	"github.com/ar-siddiqui/mcat-ras/tools"
 
 	"github.com/USACE/filestore"
 	"github.com/go-errors/errors" // warning: replaces standard errors
