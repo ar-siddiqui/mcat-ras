@@ -1,9 +1,9 @@
 package main
 
 import (
-	"app/config"
-	"app/handlers"
-	"app/pgdb"
+	"github.com/ar-siddiqui/mcat-ras/config"
+	"github.com/ar-siddiqui/mcat-ras/handlers"
+	"github.com/ar-siddiqui/mcat-ras/pgdb"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
